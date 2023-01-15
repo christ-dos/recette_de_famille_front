@@ -2,6 +2,7 @@ import { FunctionComponent } from 'react';
 import '../css/children.css';
 
 
+/****************** Composant Encart de présentation ************************/
 export const BienvenueComponent: FunctionComponent = () => {
     
     return (
@@ -16,18 +17,42 @@ export const BienvenueComponent: FunctionComponent = () => {
         
     </section>
     );
-  }
+  };
 
-type Props = {
+/****************** Composant titre  H2************************/
+type PropsTitre = {
   titre: string;
 };
-  export const TitreH2: FunctionComponent<Props> = ({titre}) => {
+  export const TitreH2: FunctionComponent<PropsTitre> = ({titre}) => {
     
     return (
       <main id="titreHome">
         <h2>{titre}</h2>
       </main>
     );
-  }
+  };
+  
+/****************** Composant Form Group Input************************/
+type AttributsInputProps = {
+    id?: string,
+    nom?: string,
+    valeur?: string,
+    type: string,
+    placeHolder?: string,
+    label?: string,
+    error?: string
+}
+export const FormGroupInput: FunctionComponent<AttributsInputProps> = ({id, nom, valeur, type, placeHolder, label, error}) => {
+    
+  return (
+    <div className="form-group row ">
+      <label htmlFor= {id} className="col-md-2 col-lg-3 col-form-label form-control-label">{label}</label>
+      <div className="col-lg-9 py-1">
+          <input id={id} name={nom}  className="form-control "  style={{width: '100%'}} type={type}  value={valeur} placeholder={placeHolder}/>
+          <p className="m-1">{error}</p>
+      </div>
+  </div>
+  );
+};
 
  

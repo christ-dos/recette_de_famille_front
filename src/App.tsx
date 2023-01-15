@@ -2,6 +2,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
 import HomePage from './page/home-page';
+import ProfilePage from './page/Profile-page';
 import RcetteDetail from './page/recette-details';
 import RecetteList from './page/recettes-list';
 
@@ -20,6 +21,8 @@ const App: React.FC = () => {
                 <li><Link to="/" className="text-black">Home</Link></li>
                 <li> <Link to="/livrerecettes" className="text-black">livrerecettes</Link></li>
                 <li><Link to="/recettes/:id" className="text-black">DetailsREcette</Link></li>
+                <li><Link to="/profile" className="text-black">Profile</Link></li>
+              
               </ul>
              
              
@@ -33,6 +36,7 @@ const App: React.FC = () => {
               <Route  exact path="/" component={HomePage}/> 
               <Route  exact path="/livrerecettes" component={RecetteList}/> 
               <Route  path="/recettes/:id" component={RcetteDetail}/> 
+              <Route  path="/profile" component={ProfilePage}/> 
             </Switch>
 
           </div>
