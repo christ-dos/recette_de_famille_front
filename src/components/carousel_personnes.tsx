@@ -1,6 +1,6 @@
 
 import { FunctionComponent } from "react";
-import '../css/carousel-personne.css';
+import '../css/carousel_personne.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGreaterThan } from '@fortawesome/free-solid-svg-icons'
 import { faLessThan } from '@fortawesome/free-solid-svg-icons'

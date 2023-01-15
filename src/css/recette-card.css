@@ -32,5 +32,10 @@
   overflow: hidden;
 }
 
+#recetteCard :hover
+{    
+    opacity: 0.6;
+}
+
 
 

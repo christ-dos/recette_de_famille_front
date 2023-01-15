@@ -19,7 +19,7 @@ const App: React.FC = () => {
               <ul>
                 <li><Link to="/" className="text-black">Home</Link></li>
                 <li> <Link to="/livrerecettes" className="text-black">livrerecettes</Link></li>
-                <li></li>
+                <li><Link to="/recettes/:id" className="text-black">DetailsREcette</Link></li>
               </ul>
              
              

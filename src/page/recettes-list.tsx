@@ -1,5 +1,5 @@
 import { FunctionComponent, useEffect, useState } from 'react';
-import { Bouton } from '../components/Bouton';
+import { BoutonAdd } from '../components/Bouton';
 import { TitreH2 } from '../components/children';
 import RecetteCard from '../components/recette-card';
 import RECETTES from '../models/mock-recettes';
@@ -21,7 +21,7 @@ const RecetteList: FunctionComponent = () => {
       </div>
     
     <div className="col-2 mt-3 pe-4 d-flex justify-content-end">
-        <Bouton/>
+        <BoutonAdd/>
     </div>
     </div>
 
