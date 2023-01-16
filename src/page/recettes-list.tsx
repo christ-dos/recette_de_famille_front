@@ -20,9 +20,9 @@ const RecetteList: FunctionComponent = () => {
         <TitreH2 titre={'Livre de Recettes'}/>
       </div>
     
-    <div className="col-2 mt-3 pe-4 d-flex justify-content-end">
-        <BoutonAdd/>
-    </div>
+      <div className="col-2 mt-3 pe-4 d-flex justify-content-end">
+          <BoutonAdd/>
+      </div>
     </div>
 
     <div className="row mx-auto mt-4">

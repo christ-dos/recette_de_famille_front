@@ -10,10 +10,8 @@ import Recette from '../models/recette';
 
 
 const HomePage: FunctionComponent = () => {
-  const [recettes, setRecettes] = useState<Recette[]>([]);
-  const [isLoaded, setLoaded] = useState(false)
+  
 
- 
   return (
     <>
       <BienvenueComponent />

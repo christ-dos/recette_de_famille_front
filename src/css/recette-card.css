@@ -32,10 +32,19 @@
   overflow: hidden;
 }
 
-#recetteCard :hover
+#recetteCard 
 {    
-    opacity: 0.6;
+  max-width: 440px ;
+  transition: transform .1s;
 }
+
+#recetteCard .scale:hover
+{    
+     opacity: 0.8;
+    transform: scale(1.1);
+}
+
+
 
 
 
