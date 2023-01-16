@@ -16,11 +16,11 @@ const RecetteList: FunctionComponent = () => {
   return (
     <>
     <div className="row">
-      <div className="col-10 d-flex justify-content-center">
+      <div className="col-12 d-flex justify-content-center pb-0">
         <TitreH2 titre={'Livre de Recettes'}/>
       </div>
     
-      <div className="col-2 mt-3 pe-4 d-flex justify-content-end">
+      <div className="col-12 mt-3 pe-4 d-flex justify-content-end">
           <BoutonAdd/>
       </div>
     </div>

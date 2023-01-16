@@ -45,3 +45,8 @@
     border-radius: 5px;
     
 }
+
+#btn_lien .bold{
+    font-size: larger;
+    color:  #c79d6f;
+  }

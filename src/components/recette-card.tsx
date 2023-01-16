@@ -16,14 +16,14 @@ const RecetteCard: FunctionComponent<Props> = ({ recette }) => {
   return (
 
     <div id="recetteCard" className=" col-12 col-md-6 col-lg-4" >
-        <div className=" card mb-4 custom-bg-vert custom-shadow-card text-light">
+        <div className=" card mb-4 custom-bg-vert custom-shadow-card text-light scale">
         <NavLink to={'/recettes/' + recette.id} style={{ textDecoration: 'none' }}>
-          <div className="row g-0 scale">
+          <div className="row g-0">
             <div className=" col-12 col-sm-6">
               <img src={recette.urlPicture} className="img-fluid rounded-start " alt="..." style={{ maxHeight: '100%' }} />
             </div>
             <div className=" col-12 col-sm-6">
-              <div className="card-body">
+              <div className="card-body text-light">
                 <h5 className="card-title overflow-elipsis">{recette.title}</h5>
                 <blockquote>
                   <p className="card-text">{recette.difficultyLevel}</p>
@@ -35,7 +35,7 @@ const RecetteCard: FunctionComponent<Props> = ({ recette }) => {
            
           </div>
           </NavLink>
-          <div className="card-footer d-flex justify-content-end ">
+          <div className="card-footer d-flex justify-content-end  ">
               <BoutonLiens href={'/delete'} icon={faTrashAlt} />
               <BoutonLiens href={'/update '} icon={faPencil} />
             </div>

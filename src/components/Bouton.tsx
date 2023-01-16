@@ -43,7 +43,7 @@ export const BoutonLiens: FunctionComponent<BtnLienProps> = ({href, icon}) => {
 
   return (
     <div id="btn_lien" className='ps-1'>
-      <a href={href} className="btn btn-light border border-dark"><FontAwesomeIcon icon={icon} style={{color: ' #c79d6f', fontWeight:'bold'}}/></a>
+      <a href={href} className="btn btn-light border border-dark bold"><FontAwesomeIcon icon={icon} /></a>
     </div>
 
   );

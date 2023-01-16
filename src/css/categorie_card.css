@@ -1,7 +1,9 @@
-#categarieCard:hover
-{
-    opacity: 0.5;
+
+#categarieCard .scale:hover
+{    
+    transform: scale(1.05);
 }
+
 
 @media screen and (min-width: 576px){
     #categarieCard .custom-width-card {
