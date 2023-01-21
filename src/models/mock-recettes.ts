@@ -1,6 +1,24 @@
+import { getAllRecette } from "../services/RecetteService";
 import Recette from "./recette";
+
+async function getRecettes() {
+   const reponse = await getAllRecette();
+   return reponse;
+ }
+
+ let RECETTES: Recette[] = [];
+ const recettes = async () => {
+   RECETTES = await getAllRecette();
+   console.log(RECETTES);
    
-export const RECETTES: Recette[] = [
+}
+
+recettes();
+
+   
+ 
+ 
+ /*[
  {
   id: 1,
   title: "Poulet Basquaise",
@@ -147,6 +165,6 @@ export const RECETTES: Recette[] = [
   difficultyLevel:  'facile',
   numberOfPeople:  '4 personnes'
  }
-];
+];*/
   
 export default RECETTES;

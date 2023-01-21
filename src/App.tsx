@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Link, Route, Switch } from 'react-router-dom';
 import AjoutRecettePage from './page/Ajout-recette-page';
 import HomePage from './page/home-page';
 import ProfilePage from './page/Profile-page';
@@ -24,6 +24,7 @@ const App: React.FC = () => {
                 <li><Link to="/recettes/:id" className="text-black">DetailsREcette</Link></li>
                 <li><Link to="/profile" className="text-black">Profile</Link></li>
                 <li><Link to="/recette/add" className="text-black">Ajouter Recette</Link></li>
+
               
               </ul>
              
@@ -40,6 +41,7 @@ const App: React.FC = () => {
               <Route  path="/recettes/:id" component={RcetteDetail}/> 
               <Route  path="/profile" component={ProfilePage}/> 
               <Route  path="/recette/add" component={AjoutRecettePage}/> 
+            
             </Switch>
 
           </div>

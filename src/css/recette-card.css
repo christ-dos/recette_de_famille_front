@@ -43,6 +43,15 @@
     transform: scale(1.05);
 }
 
+#recetteCard .image{
+  max-height: 150px;
+}
+
+#recetteCard .img-fluid{
+  width: 100%;
+  height: 100%;
+}
+
 
 
 

@@ -26,7 +26,7 @@ type PropsTitre = {
   export const TitreH2: FunctionComponent<PropsTitre> = ({titre}) => {
     
     return (
-      <main id="titreHome">
+      <main id="titreH2">
         <h2>{titre}</h2>
       </main>
     );

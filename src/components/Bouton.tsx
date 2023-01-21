@@ -1,6 +1,9 @@
 import { IconDefinition } from '@fortawesome/free-regular-svg-icons';
+import { faTrash } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { FunctionComponent } from 'react';
+import { FunctionComponent, useState } from 'react';
+import { Button, Modal } from 'react-bootstrap';
+import { render } from 'react-dom';
 import '../css/bouton.css';
 import '../css/common.css';
 
@@ -36,17 +39,17 @@ export const BoutonClassique: FunctionComponent<Props> = ({ value }) => {
 
 type BtnLienProps = {
   href: string,
-  icon: IconDefinition
+  icon: IconDefinition,
 }
 /*********************************Bouton lien avec rediection ********************* */
-export const BoutonLiens: FunctionComponent<BtnLienProps> = ({href, icon}) => {
+export const BoutonLiens: FunctionComponent<BtnLienProps> = ({ href, icon }) => {
 
   return (
-    <div id="btn_lien" className='ps-1'>
-      <a href={href} className="btn btn-light border border-dark bold"><FontAwesomeIcon icon={icon} /></a>
-    </div>
+    <>
+      <div id="btn_lien" className='ps-1'>
+        <a href={href} className="btn btn-light border border-dark"><FontAwesomeIcon icon={icon} /></a>
+      </div>
 
+    </>
   );
 }
-
-
